@@ -81,3 +81,8 @@ Future initializeTimeZone([String path]) {
     throw TimeZoneInitException(e.toString());
   });
 }
+
+void initialize(List<int> rawData, Location location) {
+  initializeDatabase(rawData);
+  setLocalLocation(location);
+}
