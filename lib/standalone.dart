@@ -83,6 +83,11 @@ Future initializeTimeZone([String path]) {
 }
 
 void initialize(List<int> rawData, Location location) {
-  initializeDatabase(rawData);
+  initializeTZDatabase(rawData);
   setLocalLocation(location);
+}
+
+
+void initializeTZDatabase(List<int> rawData) {
+  initializeDatabase(rawData);
 }
